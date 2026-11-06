@@ -1,14 +1,15 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "/api",
+  baseURL: "https://countries.dev",
 });
-// HTTP GET METHOD
+
+// Get all countries
 export const getCountryData = () => {
   return api.get("/countries");
 };
 
-// HTTP GET METHOD fro the indvi. country name
+// Get individual country by alpha3Code
 export const getCountryDataIndv = (alpha3Code) => {
   return api.get(`/alpha/${alpha3Code}`);
 };

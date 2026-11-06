@@ -11,7 +11,7 @@ export const CountryCard = ({ country }) => {
       >
         <img
           src={flags.svg}
-          alt={flags.alt}
+          alt={`${name} flag`}
           className="w-full h-48 object-cover rounded-lg"
         />
         <div className="mt-4 space-y-2">
