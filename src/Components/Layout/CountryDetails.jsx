@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Loader } from "../UI/Loader";
-import { getCountryDataIndv } from "../../api/Postapi";
+import { getCountryDataIndv } from "../../api/postApi";
 
 export const CountryDetails = () => {
   // URL se alphaCode lo (e.g., AFG, IND, PAK)
